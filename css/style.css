@@ -1,0 +1,654 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html{
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.clearfix {
+    overflow: auto;
+  }
+@font-face {
+    font-family: "myWebFont";
+    src: url("fonts/ArbFONTS-GE-SS-Two-Light_28.otf");
+    src: url("fonts/ArbFONTS-GE-SS-Two-Light_28.otf") format('eot'),
+    url("fonts/ArbFONTS-GE-SS-TV-Light_10.otf") format('opentype'),
+    url("fonts/ArbFONTS-GE-SS-Text-Bold_26.otf") format('truetype');
+}
+html,body,h1,h2,h3,h4,h5,h6,li,td,p,a,th,input {
+    font-family: "myWebFont";
+}
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,object,iframe,
+blockquote, pre, sub, sup, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,small,strong,var,b,i,dl,dt,
+dd,ol, ul,li, fieldset, form, label, legend, table,
+caption,tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption,
+figure, footer, header, hgroup, menu,nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    direction: rtl !important;
+}
+
+div#wrapper {
+    width: 100%;   
+}
+    div#topHead {
+        height: 45px;
+        background-color: #222;
+    }
+        
+        div#topHead div#topHeadContent {
+            height: 45px;
+            width:1120px;
+            margin: 0 auto;
+            /*padding: 10px 0 0 0;*/
+        }
+        div#topHead p {
+            color: #FFF;
+            float: right;
+            padding: 10px 0 0 0;
+        }
+        div#topHead div#topHeadContent div#social {
+            width: 250px;
+            height: 35px;
+            margin: 0 20px 0 0;
+            float: left;
+        }
+        div#topHead div#topHeadContent div#social a{
+            border-style: none;
+        }
+        div#topHead div#topHeadContent div#social a i {
+            padding-top: 4px;
+        }
+        div#topHead a:link, div#topHead a:visited {
+            color: #FFF;
+            text-decoration: none;
+            display: block;
+            float: left;
+            border-left: 1px solid #424242;
+            padding: 10px 10px 0 10px;
+            height: 35px;
+        }
+        div#topHead div#topHeadContent a i{
+            margin: 0 0 0 5px;
+        }
+    
+    div#contentWrapper {
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+        div#logo {
+            margin: 5px 0 0 0;
+        }
+
+        div#logo img:first-of-type {
+            display: block;
+            float: right;
+        }
+        div#logo img:last-of-type {
+            display: block;
+            float: left;
+        }
+        nav ul#mainMenu {
+            margin: 5px 0 0 0;
+            border-bottom: 5px solid #117332;
+        }
+        nav ul#mainMenu li {
+            float: right;
+        }
+        
+        nav ul#mainMenu li a:link, nav ul#mainMenu li a:visited {
+            display: block;
+            padding: 10px 15px;
+            background-color: #444;
+            color: #FFF;
+            text-decoration: none;
+            border-left: 1px solid #4f4e4e;
+            font-size: 1.2em;
+            box-shadow: 0 3px 1px 0 rgba(34,34,34,.4) inset;
+            -webkit-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            -ms-transition: background 0.3s ease-in-out;
+            -o-transition: background 0.3s ease-in-out;
+            transition: background 0.3s ease-in-out;
+            text-align: center;
+        }
+        nav ul#mainMenu li a:hover, nav ul#mainMenu li a:active, nav ul#mainMenu li a.selected  {
+            background-color: #117332;
+            box-shadow: none;
+        }
+        nav ul#mainMenu li form input[type=text] {
+            padding: 10px 15px;
+            border: none;
+            width: 443px;
+            height: 46px;
+            font-size: 1.2em;
+            color: #FFF;
+            background: #444 url(../images/search.png) no-repeat 12px 12px;
+        }
+        div#banner {
+            margin: 5px 0 0 0;
+            border-bottom: solid 5px #444;
+        }
+            div#banner ul#bannerItems {
+                width: 390px;
+                float:right;
+            }
+            div#banner ul#bannerItems li {
+                background-color: #EEE;
+            }
+            div#banner ul#bannerItems li a:link,
+            div#banner ul#bannerItems li a:visited {
+                display: block;
+                background-color: #e8e8e8;
+                height: 235px;
+            }
+            div#banner ul#bannerItems li a{
+                text-decoration: none;
+            }
+            div#banner ul#bannerItems li a img{
+                display: block;
+                border-bottom: 3px solid #444;
+            }
+            div#banner ul#bannerItems li a span{
+                padding: 0 0 0 30px;
+            }
+            div#banner ul#bannerItems li a span:first-of-type {
+                display: inline-block;
+                float:right;
+                width: 110px;
+                border-left: 2px solid #1983c7;
+                font-size: 1.8em;
+                text-align: center;
+                padding: 8px 0 0 0;
+                margin: 10px 0;
+                color: #1983c7;
+            }
+            div#banner ul#bannerItems li a span:last-of-type {
+                display: inline-block;
+                float:left;
+                width: 200px;
+                font-size: 1.2em;
+                color: #333;
+                text-align: center;
+                padding-top: 15px;
+            }
+            div#banner ul#bannerItems li:first-child a span:first-of-type {
+                color: #927231;
+                border-left: 2px solid #927231;
+            }
+            div#banner ul#bannerItems li:last-child a span:first-of-type {
+                padding: 5px 8px 0 0;
+                margin: 10px 0 0 0;
+                color: #cc0066;
+                border-left: 2px solid #cc0066;
+            }
+        div#banner div#viwer {
+            width: 725px;
+            float:left;
+            background-color: #e8e8e8;  
+        }
+            div#banner div#viwer span:first-of-type{
+                display: inline-block;
+                float: right;
+                width: 200px;
+                border-left: 2px solid #117332;
+                font-size: 1.5em;
+                text-align: center;
+                margin: 20px 0;
+                color: #117332;
+            }
+            div#banner div#viwer span:first-of-type i{
+                font-size: 1.9em;
+            }
+            div#banner div#viwer span:last-of-type{
+                display: inline-block;
+                float: left;
+                width: 500px;
+                font-size: 1.4em;
+                color: #333;
+                text-align: center;
+                padding-top: 18px;
+            }
+        div#breadCrumb {
+               height: 40px;
+               border-bottom: solid 5px #444;
+               background: #a9a9a9;
+               margin: 5px 0;
+        }
+        div#breadCrumb a:link,
+        div#breadCrumb a:visited {
+            display: block;
+            height: 30px;
+            padding: 10px 10px 0 10px;
+            float: right;
+            background-color: #444;
+            color: #EEE;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.1em;
+            border-left: #EEE solid 3px;
+        }
+        div#breadCrumb a.selected {
+            background: #117332 ;
+        }
+
+        div#breadCrumb ul li a i{
+            margin: 0 5px;
+        }
+        div#breadCrumb ul li:first-of-type a:link, div#breadCrumb ul li:first-of-type a:visited {
+            background-color: #117332;
+            box-shadow: none;
+        }
+        div#breadCrumb ul li a:hover, div#breadCrumb ul li a:active, div#breadCrumb ul li a.selected {
+            background-color: #117332;
+            box-shadow: none;
+            -webkit-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            -ms-transition: background 0.3s ease-in-out;
+            -o-transition: background 0.3s ease-in-out;
+            transition: background 0.3s ease-in-out;
+            text-align: center;
+        }
+        /*div#breadCrumb {
+            margin: 10px 0;
+            border-bottom: solid 5px #444;
+        }
+        div#breadCrumb ul li{
+            margin-left: 5px;
+            padding: 10px 0 10px 0;
+            float: right;
+        }
+        div#breadCrumb ul li a{
+            text-decoration: none;
+            color: #EEE;
+            padding: 10px;
+            text-align: center;
+            background-color: #444;
+            box-shadow: 0 3px 1px 0 rgba(34,34,34,.4) inset;
+        }
+        div#breadCrumb ul li a i {
+            margin: 0 5px;
+        }
+        div#breadCrumb ul li:first-of-type a:link, div#breadCrumb ul li:first-of-type a:visited {
+            background-color: #117332;
+            box-shadow: none;
+        }
+        div#breadCrumb ul li a:hover, div#breadCrumb ul li a:active, div#breadCrumb ul li a.selected {
+            background-color: #117332;
+            box-shadow: none;
+            -webkit-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            -ms-transition: background 0.3s ease-in-out;
+            -o-transition: background 0.3s ease-in-out;
+            transition: background 0.3s ease-in-out;
+            text-align: center;
+        }
+        div#breadCrumb ul li:last-child {
+            width: 831px;
+            background-color: #777;
+            height: 22px;
+        }*/
+
+        div#pageContent div#adv { 
+            width: 175px;
+            float: right;
+            border: solid 1px #c9c8c8;
+            height: 765px;
+        }
+                         
+    div#pageContetn div#mainContent {
+        width: 942px;
+        float: left;
+    }
+
+    div#pageContent div#mainContent div.block {
+        float: right;
+        width: 310px;
+        height: 380px;
+        background-color: #e8e8e8;
+        border: solid 1px #c9c8c8;
+        margin: 0 0 3px 3px;
+        text-align: center;
+    }
+    div#pageContent div#mainContent div.block:nth-child(3n) {
+        margin: 0;
+    }
+    div#pageContent div#mainContent div.block ul {
+        list-style: none;
+    }
+    div#pageContent div#mainContent div.block div.tabs a:link,
+    div#pageContent div#mainContent div.block div.tabs a:visited {
+        display: block;
+        float: right;
+        padding: 5px 10px;
+        text-align: center;
+        background: #0a4f21;
+        color: #EEE;
+        font-size: .95em;
+        width: 82.65px;
+        height: 25px;
+        border-left: 1px solid #0f602a;
+    }
+    div#pageContent div#mainContent div.block div.tabs a:last-child {
+        border: none;
+    }
+    div#pageContent div#mainContent div.block div.tabs a:link:hover,
+    div#pageContent div#mainContent div.block div.tabs a:visited:hover,
+    div#pageContent div#mainContent div.block div.tabs2 a:link:hover,
+    div#pageContent div#mainContent div.block div.tabs2 a:visited:hover {
+        background-color: #117332;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        -ms-transition: background 0.3s ease-in-out;
+        -o-transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out;
+    }
+    div#pageContent div#mainContent div.block div.tabs2 a:link,
+    div#pageContent div#mainContent div.block div.tabs2 a:visited {
+        display: block;
+        float: right;   
+        padding: 5px 10px;
+        text-align: center;
+        background: #0a4f21;
+        color: #EEE;
+        font-size: .95em;
+        width: 134.5px;
+        height: 25px;
+        border-left: 1px solid #0f602a;
+    }
+    div#pageContent div#mainContent div.block div.tabs2 a:last-child {
+        border: none;
+    }
+
+    div#pageContent div#mainContent div.block a:link,
+        div#pageContent div#mainContent div.block a:visited {
+            text-decoration: none ;
+    }
+    div#pageContent div#mainContent div.block header {
+        height: 36px;
+        text-align: center;
+        border-bottom: 3px solid #444;
+        /*background: url("../images/11.jpg");*/
+    }
+    div#pageContent div#mainContent div.block header h1{
+        text-align: center;
+        margin: 10px 0;
+        font-size: 1.5em;
+    }
+    div#pageContent div#mainContent div.block div.secondSection h2{
+        color: #0f602a;
+        padding: 10px 0 10px 0;
+        font-size: 1.2em;
+    }
+    div#pageContent div#mainContent div.block div.secondSection img {
+        border: 3px solid #0f602a;
+    }
+    div#pageContent div#mainContent div.block div.secondSection ul{
+        margin-top: 5px;
+    }
+    div#pageContent div#mainContent div.block div.secondSection ul li a:link,
+        div#pageContent div#mainContent div.block div.secondSection ul li a:visited{
+        color: #0f602a;
+        font-size: 1.2em;
+        float: right;
+        padding-right: 45px;
+    }
+    div#pageContent div#mainContent div.block div.secondSection a.last:link,
+        div#pageContent div#mainContent div.block div.secondSection a.last:visited{
+        color: #0f602a;
+        font-size: 1.2em;
+        text-align: left;
+        display: block;
+        margin: 0 0 10px 15px;
+    }
+    div#pageContent div#mainContent div.block div.secondSection ul li a::before{
+        content: " - ";
+    }
+    div#pageContent div#mainContent div.block.blockbooks img {
+        display: block;
+        margin: 0 auto;
+    }
+    div#pageContent div#mainContent div.block div.secondSection div.x {
+        display: inline-flex;
+    }
+    div#pageContent div#mainContent div.block div.secondSection div.x a:link,
+        div#pageContent div#mainContent div.block div.secondSection div.x a:visited {
+        padding: 80px 20px 0 20px;
+        font-size: 2.5em;
+        color: #0f602a;
+    }
+    div#pageContent div#mainContent div.block div.secondSection div.x a i:hover {
+        color: #117332;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        -ms-transition: background 0.3s ease-in-out;
+        -o-transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out;
+    }
+    div#pageContent div#mainContent div.block div.secondSection {
+        margin-bottom: 18px;
+    }
+    div#pageContent div#mainContent div.block a.last1:link,
+        div#pageContent div#mainContent div.block a.last1:visited {
+        color: #0f602a;
+        font-size: 1.5em;
+        /*background: url('../images/he.png');*/
+    }
+    div#pageContent div#mainContent div.block div.second ul.y {
+        padding-bottom: 30px;
+    }
+    div#pageContent div#mainContent div.block div.second ul.y li {
+        margin: 20px 20px 20px 0;
+        font-size: 1.3em;
+        text-align: right;
+    }
+    div#pageContent div#mainContent div.block div.second ul.y li a{
+        color: #0f602a;
+    }
+
+    div#pageContent div#mainContent div.block div.blockCons ul li i{
+        color: #0f602a;
+        padding-left: 5px;
+        font-size: 1.5em;
+    }
+    div#pageContent div#mainContent div.block div.mainPhoto img{
+        border-bottom: 3px solid #0f602a;
+        margin-bottom: 15px;
+    }
+    div#pageContent div#mainContent div.block div.subPhotos img{
+        border: 3px solid #0f602a;
+    }
+    div#pageContent div#mainContent div.block ul#playList {
+        margin-bottom: 20px;
+    }
+    div#pageContent div#mainContent div.block ul#playList li {
+        display: block;
+        background: rgb(177, 176, 176);
+        margin: 5px 5px;
+        height: 31.6px;
+    }
+    div#pageContent div#mainContent div.block ul#playList li:nth-child(even) {
+        background: #c3c3c3;
+    }
+    div#pageContent div#mainContent div.block ul#playList li p{
+        float: right;
+        padding: 3px 15px 0 0;
+        color: #006221;
+        font-size: 1.3em;
+    }
+    div#pageContent div#mainContent div.block ul#playList li a i{
+        float: left;
+        padding: 5px 0 5px 15px;
+        color: #117332;
+    }
+    div#pageContent div#mainContent div.block div.aud audio{
+        background: #41905c;
+        border-radius: 10px;
+        height: 40px;
+    }
+    div#pageContent div#mainContent div.block div.video h2 {
+        margin: 10px 3.3px 0px 3.3px;
+        font-size: 1.6em;
+        color: #117332;
+    }
+    div#pageContent div#mainContent div.block div.video video{
+        width: 100%;
+        height: 200px;
+    }
+    div#pageContent div#mainContent div.block form select{
+        margin: 4px 0 10px 0;
+        width: 95%;
+        height: 35px;
+        border: solid 1px #444;
+        border-radius: 5px;
+        color: #117332;
+        font-size: 1.1em;
+    }
+    div#contentWrapper div#news {
+        border: 1px solid #c6c5c5;
+    }
+    div#contentWrapper div#news header h1{
+        border-bottom: #444 5px solid;
+        margin: 20px 0 0 0;
+        font-size: 2em;
+        text-align: center;
+        background-color: #666;
+        color: #FFF;
+    }
+    div#contentWrapper div#news div.article {
+        background: #E8E8E8;
+    }
+    div#contentWrapper div#news div.article h1{
+        font-size: 2em;
+        margin: 15px 20px 0 0;
+        color: #505050;
+    }
+    div#contentWrapper div#news div.article div.right {
+        float: right;
+        width: 70%;
+        height: 280px;
+    }
+    div#contentWrapper div#news div.article div.right h2{ 
+        font-size:1.5em;
+        margin: 0px 20px 30px 0;
+        color: #505050;
+    }
+    div#contentWrapper div#news div.article div.right p {
+        font-size: 1.3em;
+        margin: 0 20px 0 0;
+        color: #505050;
+    }
+    div#contentWrapper div#news div.article img {
+        float: left;
+        border: 4px solid #818181;
+        margin: 0 0 20px 20px;
+    }
+    div#contentWrapper div#news div.article div.right div#newsControlles {
+        padding: 90px 500px 10px 0;
+    }
+    div#contentWrapper div#news div.article div.right div#newsControlles a:link,
+    div#contentWrapper div#news div.article div.right div#newsControlles a:visited {
+        display: inline-block;
+        width: 18px;
+        height: 19px;
+    }
+
+    div#contentWrapper div#news div.article div.right div#newsControlles a i{
+        color: #444;
+    }
+    footer {
+        background: #252525;
+        margin: 10px 0 0 0;
+        border-top: 5px solid #444;
+    }
+        footer ul {
+            list-style: none;
+        }
+        footer div#upperFooter {
+            width: 1120px;
+            margin: 0 auto;
+            padding: 20px 0 0 0;
+        }
+        footer div#upperFooter div.footerBlock {
+            float: right;
+            width: 279px;
+            height: 240px;
+            border-left: 1px dashed #999;
+        }
+        footer div#upperFooter div.footerBlock:nth-last-child(1) {
+            border-left: none;
+        }
+        
+        footer div#upperFooter div.footerBlock p,
+        footer div#upperFooter div.footerBlock a:link,
+        footer div#upperFooter div.footerBlock a:visited{
+            color: #FFF;
+            font-size: 1.2em;
+            padding: 0 15px 0 0;
+            text-decoration: none;
+        }
+        footer div#upperFooter div.footerBlock h1 {
+            color: #0eb045;
+            font-size: 1.8em;
+            margin: 0 15px 5px 0;
+        }
+        footer div#upperFooter div.footerBlock h1 i {
+            color: #FFF;
+            padding: 0 0 0 15px;
+            font-size: .8em;
+        }
+        footer div#upperFooter div.footerBlock p span {
+            color: #117332;
+            font-size: 1.1em; 
+        }
+        footer div#upperFooter div.footerBlock iframe {
+            padding: 10px 15px 0 0;
+        }
+
+    footer div#lowerFooter {
+        margin: 25px 0 0 0;
+        font-size: 1.5em;
+        text-align: center;
+        height: 100px;
+        color: #117332;
+    }
+    footer div#lowerFooter h1 {
+        margin: 0 0 10px 0;
+    }
+    footer div#lowerFooter a:link,
+    footer div#lowerFooter a:visited {
+        padding-right: 30px;
+    }
+    footer div#lowerFooter a i{
+        color: #CCC;
+        font-size: 1em;
+    }
