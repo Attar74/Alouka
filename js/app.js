@@ -40,9 +40,26 @@ var gallary = {
 
 gallary.init();
 
+const week = ['الأحد','الأثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعه', 'السبت'];
+const months = ['يناير','فبراير', 'مارس','أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر','أكتوبر', 'نوفمير','ديسمبر']
+function setTime() {
+    var nowDiv = document.querySelector('#wrapper #topHead #topHeadContent #date');
+var now = new Date();
+// var hours = now.getHours();
+// var minuts = now.getMinutes();
+// var seconds = now.getSeconds();
+var day = now.getDay();
+var year = now.getFullYear();
+var month = now.getMonth();
+var d = now.getDate();
+    nowDiv.textContent = week[day] + " " +  d + " " + months[month] + " " + year;
+}
 
+window.onload = () => {
+    'use strict';
 
-
+    setInterval(setTime, 500);
+}
 
 
 
